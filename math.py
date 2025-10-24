@@ -1,14 +1,12 @@
 try:
-    a = float(input("Enter first number: "))
-    b = float(input("Enter second number: "))
+    num1 = float(input("Enter numerator: "))
+    num2 = float(input("Enter denominator: "))
 
-    print(f"Addition: {a + b}")
-    print(f"Subtraction: {a - b}")
-    print(f"Multiplication: {a * b}")
-
-    if b != 0:
-        print(f"Division: {a / b}")
+    if num2 != 0:
+        result = num1 / num2
+        print("Division result:", result)
     else:
-        print("Division by zero is not allowed.")
+        print("Cannot divide by zero!")
+
 except ValueError:
-    print("Please enter a valid number.")
+    print("Please enter valid numbers.")
