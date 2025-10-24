@@ -2,11 +2,14 @@ try:
     a = float(input("Enter first number: "))
     b = float(input("Enter second number: "))
 
-    addition = a + b
-    subtraction = a - b
+    print(f"Addition: {a + b}")
+    print(f"Subtraction: {a - b}")
+    print(f"Multiplication: {a * b}")
 
-    print(f"Addition:, {a+b}")
-    print(f"Subtraction:, {a-b}")
+    if b != 0:
+        print(f"Division: {a / b}")
+    else:
+        print("Division by zero is not allowed.")
 
 except ValueError:
-    print("Please enter valid numbers.")
+    print("Please enter a valid number.")
